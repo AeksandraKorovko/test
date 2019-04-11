@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<title>Barbershop</title>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -20,7 +21,6 @@
 					<li><a href="#">Контакты</a></li>
 				</ul>
 				<div class="login dropdown-js"><a href="#">Вход</a>
-					
 				</div>
 			</nav>
 		</div>
@@ -47,7 +47,41 @@
 						<p>Наши мастера - прфессионалы своего дела и не могут стоить дешево. Ктому же, разве цена не дает определеный статус?</p>
 					</div>
 				</div>
+			<div class="content flex">
+			<div class="contacts">
+				<h1>Контактная информация</h1>
+				<div class="contacts-info">
+					<p>Barbershop "Dorodinski"</p>     
+					<p>Адрес: г.Москва, ул.Собаки Павлова, д.13</p>
+					<p>Телефон: +7 (495) 666-02-666</p>
+					<p class="time">Время работы:</p>
+					<p>ПН — ПТ: С 10:00 ДО 22:00</p>
+					<p>СБ — ВС: С 10:00 ДО 19:00</p>
+					<div class="contacts-info1 flex" >
+					<input class=" btn btn1" type="submit" value="Как проехать" name="submit">
+					<input class="btn btn2" type="submit" value="Обратная связь" name="submit">
+					</div>
+				</div>
+			</div>
+			<div class="entry-form">
+			<form action="#" method="post">
+				<h1>Записаться</h1>
+				<p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+				<div>
+					<div class="flex">
+						<input class="it1" type="text" name="date" placeholder="Дата">
+						<input class="it2" type="text" name="time" placeholder="Время">
+					</div>
+					<div class="flex">
+						<input class="it1" type="text" id="firstname" value="" placeholder="Ваше имя" name="firstname">
+						<input class="it2" type="tel" value="" placeholder="Телефон" name="tel">
+					</div>
+					<input class="btn mt" type="submit" value="Отправить" name="submit">
+				</div>
+			</form>
 		</div>
+		</div>
+	</div>
 		<div class="submenu-js">
 			<span class="close"></span>
 			<form action="#" method="post">
@@ -63,6 +97,27 @@
 			</form>
 		</div>
 	</main>
+	<footer class="footer">
+		<div class="container flex">
+			<div class="footer-contacts">
+				<p>Barbershop «Borodinski»</p>
+				<p>Адрес: г. Москва, ул. Собаки Павлова, д. 13</p>
+				<p>Телефон: +7 (495) 666-02-666</p>
+			</div>
+			<div class="social">
+				<p>Давайте дружить</p>
+				<div class="social-i flex">
+				<a class="icon icon-vk" href="#"></a>
+				<a class="icon icon-f" href="#"></a>
+				<a class="icon icon-i" href="#"></a>
+				</div>
+			</div>
+			<div class="links">
+				<p>Дизайн сайта</p>
+				<div class="links-a"><a href="#">Glukhanko.ru</a></div>
+			</div>
+		</div>
+	</footer>
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
