@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'PT Sans';
+    src: url('PTSans-Bold.eot');
+    src: url('PTSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('PTSans-Bold.woff2') format('woff2'),
+        url('PTSans-Bold.woff') format('woff'),
+        url('PTSans-Bold.ttf') format('truetype'),
+        url('PTSans-Bold.svg#PTSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url('PTSans-Italic.eot');
+    src: url('PTSans-Italic.eot?#iefix') format('embedded-opentype'),
+        url('PTSans-Italic.woff2') format('woff2'),
+        url('PTSans-Italic.woff') format('woff'),
+        url('PTSans-Italic.ttf') format('truetype'),
+        url('PTSans-Italic.svg#PTSans-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+

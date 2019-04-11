@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Barbershop</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="wrapper">
+	<header class="header">
+		<div class="container">
+			<nav class="navigation flex">
+				<ul>
+					<li class="active"><a href="#">Главная</a></li>
+					<li><a href="#">Информаци</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Прайс-лист</a></li>
+					<li><a href="#">Магазин</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<div class="login dropdown-js"><a href="#">Вход</a>
+					
+				</div>
+			</nav>
+		</div>
+	</header>
+		<main class="main" style="background-image: url('img/fonts.jpg')">
+			<div class="container">
+				<div class="logo-header flex">
+					<a href="#"><img class="logo" alt="" src="img/logo.png"></a>
+				</div>
+				<div class="info-header flex">
+					<div class="info info1">
+						<h1>Быстро</h1>
+						<div class="rhomb-info flex"><div class="rhomb"></div></div>
+						<p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы счастливый обладатель стильной стрижки-минутки!</p>
+					</div>
+					<div class="info info2">
+						<h1>Круто</h1>
+						<div class="rhomb-info flex"><div class="rhomb"></div></div>
+						<p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино!</p>
+					</div>
+					<div class="info info3">
+						<h1>Дорого</h1>
+						<div class="rhomb-info flex"><div class="rhomb"></div></div>
+						<p>Наши мастера - прфессионалы своего дела и не могут стоить дешево. Ктому же, разве цена не дает определеный статус?</p>
+					</div>
+				</div>
+		</div>
+		<div class="submenu-js">
+			<span class="close"></span>
+			<form action="#" method="post">
+				<h1>Личный кабинет</h1>
+				<p>Введите пожалуйста свой логин и пароль</p>
+				<p><a href="#">Если вы забыли пароль</a></p>
+				<input id="login" type="text" value="" placeholder="Логин" name="login">
+				<input id="password" type="password" value="" placeholder="Пароль" name="password">
+				<input type="checkbox" name="save" id="save"> 
+				<label for="save">Запомните меня</label>
+				<a href="#">Я забыл пароль</a>
+				<input class="btn" type="submit" value="Войти" name="submit">
+			</form>
+		</div>
+	</main>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
