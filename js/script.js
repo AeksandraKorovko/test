@@ -1,15 +1,19 @@
 jQuery(document).ready(function () {
 
-	$('.dropdown-js').click(function () {
-        $(this).addClass('opened');
-        $('.submenu-js').slideDown(200);
-    });
-    $('.close').click(function () {
-        $('.dropdown-js').removeClass('opened');
-        $('.submenu-js').slideUp(200);
+$('.login').click(function () {
+   $('.popup-wrapper').fadeIn();
+});
+
+$('.close-popup').click(function () {
+    $('.popup-wrapper').fadeOut();
+});
+
+    $('.mobile-menu').click(function () {
+        $('.navigation ul').toggleClass('active');
     });
    
 });
+
 
 
 	

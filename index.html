@@ -12,6 +12,7 @@
 	<header class="header">
 		<div class="container">
 			<nav class="navigation flex">
+                <span class="mobile-menu"></span>
 				<ul>
 					<li class="active"><a href="#">Главная</a></li>
 					<li><a href="#">Информаци</a></li>
@@ -25,47 +26,71 @@
 			</nav>
 		</div>
 	</header>
-		<main class="main" style="background-image: url('img/fonts.jpg')">
+		<main class="main">
 			<div class="container">
 				<div class="logo-header flex">
 					<a href="#"><img class="logo" alt="" src="img/logo.png"></a>
 				</div>
 				<div class="info-header flex">
 					<div class="info info1">
-						<h1>Быстро</h1>
+						<div class="title30">Быстро</div>
 						<div class="rhomb-info flex"><div class="rhomb"></div></div>
 						<p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы счастливый обладатель стильной стрижки-минутки!</p>
 					</div>
 					<div class="info info2">
-						<h1>Круто</h1>
+						<div class="title30">Круто</div>
 						<div class="rhomb-info flex"><div class="rhomb"></div></div>
 						<p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино!</p>
 					</div>
 					<div class="info info3">
-						<h1>Дорого</h1>
+						<div class="title30">Дорого</div>
 						<div class="rhomb-info flex"><div class="rhomb"></div></div>
 						<p>Наши мастера - прфессионалы своего дела и не могут стоить дешево. Ктому же, разве цена не дает определеный статус?</p>
 					</div>
 				</div>
-			<div class="content flex">
-			<div class="contacts">
-				<h1>Контактная информация</h1>
-				<div class="contacts-info">
+				<div class="content1 flex">
+			<div class="news block-l">
+				<div class="title30">Новости</div>
+					<a href="#">Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</a>
+					<p class="italic" href="#">25 сентября</p>
+					<div class="news1">
+					<a href="#">Внашей команде пополнение, Борис "Бритва" Стригунецб обладатель множества титулов и наград пополнит наши стройные ряды</a>
+					<p class="italic" href="#">19 сентяря</p>
+					</div>
+					<input class=" btn btn1" type="submit" value="Все новости" name="submit">
+			</div>
+			<div class="gallery block-r">
+				<div class="title30">Фотогалерея</div>
+				<div class="gallery-img">
+	                <div class="gallery-img-inner">
+	                <img src="img/gallery.jpg" alt="img">
+	                </div>
+	            </div>
+				<div class="flex">
+				<input class=" btn btn1" type="submit" value="Назад" name="submit">
+				<input class="btn btn2" type="submit" value="Вперед" name="submit">	
+				</div>
+			</div>
+		</div>
+			<div class="content2 flex">
+			<div class="contacts block-l">
+				<div class="title30">Контактная информация</div>
 					<p>Barbershop "Dorodinski"</p>     
 					<p>Адрес: г.Москва, ул.Собаки Павлова, д.13</p>
 					<p>Телефон: +7 (495) 666-02-666</p>
+					<div class="contacts-info1">
 					<p class="time">Время работы:</p>
 					<p>ПН — ПТ: С 10:00 ДО 22:00</p>
 					<p>СБ — ВС: С 10:00 ДО 19:00</p>
-					<div class="contacts-info1 flex" >
+					</div>
+					<div class="flex">
 					<input class=" btn btn1" type="submit" value="Как проехать" name="submit">
 					<input class="btn btn2" type="submit" value="Обратная связь" name="submit">
-					</div>
 				</div>
 			</div>
-			<div class="entry-form">
+			<div class="entry-form block-r">
 			<form action="#" method="post">
-				<h1>Записаться</h1>
+				<div class="title30">Записаться</div>
 				<p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
 				<div>
 					<div class="flex">
@@ -82,23 +107,9 @@
 		</div>
 		</div>
 	</div>
-		<div class="submenu-js">
-			<span class="close"></span>
-			<form action="#" method="post">
-				<h1>Личный кабинет</h1>
-				<p>Введите пожалуйста свой логин и пароль</p>
-				<p><a href="#">Если вы забыли пароль</a></p>
-				<input id="login" type="text" value="" placeholder="Логин" name="login">
-				<input id="password" type="password" value="" placeholder="Пароль" name="password">
-				<input type="checkbox" name="save" id="save"> 
-				<label for="save">Запомните меня</label>
-				<a href="#">Я забыл пароль</a>
-				<input class="btn" type="submit" value="Войти" name="submit">
-			</form>
-		</div>
 	</main>
-	<footer class="footer">
-		<div class="container flex">
+	<footer class="footer-block">
+		<div class="container footer flex">
 			<div class="footer-contacts">
 				<p>Barbershop «Borodinski»</p>
 				<p>Адрес: г. Москва, ул. Собаки Павлова, д. 13</p>
@@ -114,14 +125,38 @@
 			</div>
 			<div class="links">
 				<p>Дизайн сайта</p>
-				<div class="links-a"><a href="#">Glukhanko.ru</a></div>
+				<a class="links-a" href="#">Glukhanko.ru</a>
 			</div>
 		</div>
 	</footer>
+	<div class="popup-wrapper">
+        <div class="popup-inner">
+            <div class="popup">
+                <div class="title30">Личный кабинет</div>
+                <p>
+                    ВВедите пожалуйста свой логин и пароль
+                    Если вы забыли пароль
+                </p>
+                <form class="form">
+                    <div class="login-field"><input type="text" name="login" placeholder="Имя"></div>
+                    <div class="pass-field"><input type="text" name="password" placeholder="Пароль"></div>
+                    <div class="forgot">
+                        <div>
+                            <input type="checkbox" name="forgot" id="forgot">
+                            <label for="forgot">Запомните меня</label>
+                        </div>
+                        <div>
+                            <a href="#">Я забыл пароль!</a>
+                        </div>
+                    </div>
+                    <input class="btn" type="submit" name="submit" value="Войти">
+                </form>
+                <span class="close-popup"></span>
+            </div>
+        </div>
+	</div>
 </div>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
