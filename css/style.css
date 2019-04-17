@@ -1,3 +1,18 @@
+.example {
+    display: -ms-grid;
+    display: grid;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+    background: -webkit-linear-gradient(top, white, black);
+    background: -o-linear-gradient(top, white, black);
+    background: linear-gradient(to bottom, white, black);
+}
 @font-face {
     font-family: 'PT Sans Narrow';
     src: url('../fonts/PTSans-NarrowBold.eot');
@@ -134,7 +149,9 @@ label{
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
 	background: #000;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	position: relative;
 }
 .login>a{
@@ -260,12 +277,15 @@ label{
 	margin-bottom: 35px;
 }
 .gallery-img{
-    width: 300px;
-    min-width: 300px;
+    width: 100%;
+    max-width: 100%;
     height: 178px;
     padding: 7px;
     margin-bottom: 28px;
     background: #fff;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .gallery-img-inner{
     background: #e5e5e5;
@@ -297,6 +317,19 @@ label{
 	background-color: #f9f6f3;
 	padding: 50px 80px 62px 90px;
 	width: 50%;
+	position: relative;
+}
+.block-r:before{
+    content: '';
+    width: 8px;
+    height: 278px;
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+    background-image: url("../img/ten.png");
 }
 .block-r p{
 	text-transform: uppercase;
@@ -327,7 +360,15 @@ label{
 }
 .links{
 	width: 33.3%;
-	padding-left: 175px;
+}
+.links-blok{
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: reverse;
+	    -ms-flex-direction: row-reverse;
+	        flex-direction: row-reverse;
+}
+.links p{
+	padding-right: 28px;
 }
 .links-a{
 	display: block;
@@ -346,9 +387,12 @@ label{
 	text-transform: uppercase;
 	font-size: 14px;
 	text-decoration: none;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 .footer p{
+	text-transform: uppercase;
 	line-height: 24px;
 }
 .social>a{
@@ -408,9 +452,15 @@ label{
 	z-index: 100;
 }
 .popup-inner{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	overflow-y: auto;
 	width: 100%;
 	height: 100%;
@@ -458,7 +508,9 @@ label{
 	height: 17px;
 	position: absolute;
 	top: 50%;
-	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	        transform: translateY(-50%);
 	right: 13px;
 	background-repeat: no-repeat;
 	background-size: 100%;
@@ -471,9 +523,15 @@ label{
 	background-image: url("../img/pass.png");
 }
 .forgot{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 .forgot input{
 	display: inline-block;
@@ -563,6 +621,8 @@ input[type=checkbox]:checked + label:before{
 		width: 300px;
 		background: #000;
 		left: -500px;
+		-webkit-transition: 0.4s;
+		-o-transition: 0.4s;
 		transition: 0.4s;
 		max-height: calc(100vh - 52px);
 		height: 100vh;
@@ -571,14 +631,27 @@ input[type=checkbox]:checked + label:before{
 	.navigation > ul.active{
 		left: 0;
 	}
-	.links{
-		padding-left: 115px;
+	.navigation a{
+		padding: 20px 0;
+	}
+	.navigation li.active a {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 18px;
+	}
+	.news1 {
+    margin: 23px 0 0;
+	}
+	.login>a {
+    padding-left: 52px;
 	}
 }
 @media (max-width: 768px){
 	.info-header{
-		flex-wrap: wrap;
-		justify-content: center;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
 	}
 	.info{
 		width: 50%;
@@ -586,7 +659,8 @@ input[type=checkbox]:checked + label:before{
 		padding: 15px;
 	}
 	.content1, .content2{
-		flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
 	}
 	.block-l, .block-r{
 		width: 100%;
@@ -595,11 +669,15 @@ input[type=checkbox]:checked + label:before{
 	.block-r{
 		padding: 0 90px 54px 80px;
 	}
-	.gallery-img{
-    	margin-left: 140px;
+	.news1 {
+    margin: 23px 0 20px;
 	}
-	.links{
-		padding-left: 70px;
+	.block-r:before{
+		background: none;
+	}
+	.gallery-img{
+    width: 300px;
+    max-width: 300px;
 	}
 }
 @media (max-width: 520px){
@@ -607,26 +685,11 @@ input[type=checkbox]:checked + label:before{
 		width: 50%;
 		min-width: 100%;
 	}
-	.gallery-img{
-    margin-left: 15px;
-	}
-	.links{
-		padding-left: 30px;
-	}
-	.footer-block{
-		padding: 30px;
-	}
 }
 @media (max-width: 480px){
 	.popup{
 		max-width: 96%;
 		max-height: 96%;
 		padding: 45px 20px;
-	}
-	.gallery-img{
-    margin-left: 0;
-	}
-	.links{
-		padding-left: 15px;
 	}
 }
