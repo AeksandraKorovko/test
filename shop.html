@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Barbershop</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="wrapper">
+	<header class="header">
+		<div class="container">
+			<nav class="navigation flex">
+                <span class="mobile-menu"></span>
+				<ul>
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="info.html">Информация</a></li>
+					<li><a href="news.html">Новости</a></li>
+					<li><a href="price-list.html">Прайс-лист</a></li>
+					<li class="active"><a href="shop.html">Магазин</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
+				</ul>
+				<div class="login"><a href="#">Вход</a>
+				</div>
+			</nav>
+		</div>
+	</header>
+    <div class="main-content">
+    <div class="container">
+    	<h1 class="title30">Barbershop Borodinski - Магазин</h1>
+    	<div class="bread-crumbs">
+    		<ul>
+    			<li><a href="index.html">Главная</a></li>
+    			<li>Магазин</li>
+    			<li>Средства для ухода</li>
+    		</ul>
+    	</div>
+    	<div class="sadebar-shop">
+    		<div class="manufacturer flex">
+    			<span class="title24">Производители</span>
+    			<input type="checkbox" name="baxter" id="baxter">
+                <label for="baxter">Baxter of California</label>
+                <input type="checkbox" name="natty" id="natty">
+                <label for="natty">Mr Natty</label>
+                <input type="checkbox" name="suavesito" id="suavesito">
+                <label for="suavesito">Suavesito</label>
+                <input type="checkbox" name="malin" id="malin">
+                <label for="malin">Malin-Goetz</label>
+                <input type="checkbox" name="myrray" id="myrray">
+                <label for="myrray">Myrray's</label>
+                <input type="checkbox" name="american" id="american">
+                <label for="american">American crew</label>
+    		</div>
+    		<div class="product-group flex">
+    			<span class="title24">Группы товаров:</span>
+    			<input type="radio" name="group" id="group1" value="group1">
+                <label for="group1">Бритвенные принадлежности</label>
+                <input type="radio" name="group" id="group2" value="group2">
+                <label for="group2">Средства для ухода</label>
+                <input type="radio" name="group" id="group3" value="group3">
+                <label for="group3">Аксессуары</label>
+    		</div>
+    	</div>
+    </div>
+    </div>
+	<footer class="footer-block">
+		<div class="container footer flex">
+			<div class="footer-contacts">
+				<p>Barbershop «Borodinski»</p>
+				<p>Адрес: г. Москва, ул. Собаки Павлова, д. 13</p>
+				<p>Телефон: +7 (495) 666-02-666</p>
+			</div>
+			<div class="social">
+				<p>Давайте дружить</p>
+				<div class="social-i flex">
+				<a class="icon icon-vk" href="#"></a>
+				<a class="icon icon-f" href="#"></a>
+				<a class="icon icon-i" href="#"></a>
+				</div>
+			</div>
+			<div class="links">
+				<div class="links-blok flex"><p>Дизайн сайта:</p></div>
+				<div class="links-blok flex"><a class="links-a" href="#">Glukhanko.ru</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="popup-wrapper">
+        <div class="popup-inner">
+            <div class="popup">
+                <div class="title30">Личный кабинет</div>
+                <p>
+                    ВВедите пожалуйста свой логин и пароль
+                    Если вы забыли пароль
+                </p>
+                <form class="form">
+                    <div class="login-field"><input type="text" name="login" placeholder="Имя"></div>
+                    <div class="pass-field"><input type="text" name="password" placeholder="Пароль"></div>
+                    <div class="forgot">
+                        <div>
+                            <input type="checkbox" name="forgot" id="forgot">
+                            <label for="forgot">Запомните меня</label>
+                        </div>
+                        <div>
+                            <a href="#">Я забыл пароль!</a>
+                        </div>
+                    </div>
+                    <input class="btn" type="submit" name="submit" value="Войти">
+                </form>
+                <span class="close-popup"></span>
+            </div>
+        </div>
+	</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

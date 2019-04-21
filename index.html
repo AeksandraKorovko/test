@@ -5,27 +5,29 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<title>Barbershop</title>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
+<body class="home">
 <div class="wrapper">
 	<header class="header">
 		<div class="container">
 			<nav class="navigation flex">
                 <span class="mobile-menu"></span>
 				<ul>
-					<li class="active"><a href="#">Главная</a></li>
-					<li><a href="#">Информаци</a></li>
-					<li><a href="#">Новости</a></li>
-					<li><a href="#">Прайс-лист</a></li>
-					<li><a href="#">Магазин</a></li>
-					<li><a href="#">Контакты</a></li>
+					<li class="active"><a href="index.html">Главная</a></li>
+					<li><a href="info.html">Информация</a></li>
+					<li><a href="news.html">Новости</a></li>
+					<li><a href="price-list.html">Прайс-лист</a></li>
+					<li><a href="shop.html">Магазин</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
 				</ul>
 				<div class="login"><a href="#">Вход</a>
 				</div>
 			</nav>
 		</div>
 	</header>
+	<div class="main-content">
 		<main class="main">
 			<div class="container">
 				<div class="logo-header flex">
@@ -49,65 +51,77 @@
 					</div>
 				</div>
 				<div class="content1 flex">
-			<div class="news block-l">
-				<div class="title30">Новости</div>
-					<a href="#">Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</a>
-					<p class="italic">25 сентября</p>
-					<div class="news1">
-					<a href="#">Внашей команде пополнение, Борис "Бритва" Стригунецб обладатель множества титулов и наград пополнит наши стройные ряды</a>
-					<p class="italic">19 сентяря</p>
+					<div class="news block-l">
+						<div class="title30">Новости</div>
+						<a href="#">Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</a>
+						<p class="italic">25 сентября</p>
+						<div class="news1">
+							<a href="#">Внашей команде пополнение, Борис "Бритва" Стригунецб обладатель множества титулов и наград пополнит наши стройные ряды</a>
+							<p class="italic">19 сентяря</p>
+						</div>
+						<input class=" btn btn1" type="submit" value="Все новости" name="submit">
 					</div>
-					<input class=" btn btn1" type="submit" value="Все новости" name="submit">
-			</div>
-			<div class="gallery block-r">
-				<div class="title30">Фотогалерея</div>
-				<div class="gallery-img flex">
-	                <div class="gallery-img-inner">
-	                <img src="img/gallery.jpg" alt="img">
-	                </div>
-	            </div>
-				<div class="flex">
-				<input class=" btn btn1" type="submit" value="Назад" name="submit">
-				<input class="btn btn2" type="submit" value="Вперед" name="submit">	
+					<div class="gallery block-r">
+						<div class="title30">Фотогалерея</div>
+						<div class="gallery-img">
+							<div class="swiper-container main-slider">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<img src="img/slide1.jpg" alt="slide">
+									</div>
+									<div class="swiper-slide">
+										<img src="img/slide2.jpg" alt="slide">
+									</div>
+									<div class="swiper-slide">
+										<img src="img/slide3.jpg" alt="slide">
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="flex slider-nav">
+							<span class="btn btn1 button-prev">Назад</span>
+							<span class="btn btn2 button-next">Вперед</span>
+						</div>
+					</div>
+				</div>
+				<div class="content2 flex">
+					<div class="contacts block-l">
+						<div class="title30">Контактная информация</div>
+						<p>Barbershop "Dorodinski"</p>
+						<p>Адрес: г.Москва, ул.Собаки Павлова, д.13</p>
+						<p>Телефон: +7 (495) 666-02-666</p>
+						<div class="contacts-info1">
+							<p class="time">Время работы:</p>
+							<p>ПН — ПТ: С 10:00 ДО 22:00</p>
+							<p>СБ — ВС: С 10:00 ДО 19:00</p>
+						</div>
+						<div class="flex">
+							<input class=" btn btn1" type="submit" value="Как проехать" name="submit">
+							<input class="btn btn2" type="submit" value="Обратная связь" name="submit">
+						</div>
+					</div>
+					<div class="entry-form block-r">
+						<form action="#" method="post">
+							<div class="title30">Записаться</div>
+							<p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+							<div>
+								<div class="flex">
+									<input class="it1" type="text" name="date" placeholder="Дата">
+									<input class="it2" type="text" name="time" placeholder="Время">
+								</div>
+								<div class="flex">
+									<input class="it1" type="text" id="firstname" value="" placeholder="Ваше имя" name="firstname">
+									<input class="it2" type="tel" value="" placeholder="Телефон" name="tel">
+								</div>
+								<input class="btn mt" type="submit" value="Отправить" name="submit">
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
-		</div>
-			<div class="content2 flex">
-			<div class="contacts block-l">
-				<div class="title30">Контактная информация</div>
-					<p>Barbershop "Dorodinski"</p>     
-					<p>Адрес: г.Москва, ул.Собаки Павлова, д.13</p>
-					<p>Телефон: +7 (495) 666-02-666</p>
-					<div class="contacts-info1">
-					<p class="time">Время работы:</p>
-					<p>ПН — ПТ: С 10:00 ДО 22:00</p>
-					<p>СБ — ВС: С 10:00 ДО 19:00</p>
-					</div>
-					<div class="flex">
-					<input class=" btn btn1" type="submit" value="Как проехать" name="submit">
-					<input class="btn btn2" type="submit" value="Обратная связь" name="submit">
-				</div>
-			</div>
-			<div class="entry-form block-r">
-			<form action="#" method="post">
-				<div class="title30">Записаться</div>
-				<p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-				<div>
-					<div class="flex">
-						<input class="it1" type="text" name="date" placeholder="Дата">
-						<input class="it2" type="text" name="time" placeholder="Время">
-					</div>
-					<div class="flex">
-						<input class="it1" type="text" id="firstname" value="" placeholder="Ваше имя" name="firstname">
-						<input class="it2" type="tel" value="" placeholder="Телефон" name="tel">
-					</div>
-					<input class="btn mt" type="submit" value="Отправить" name="submit">
-				</div>
-			</form>
-		</div>
-		</div>
+		</main>
 	</div>
-	</main>
 	<footer class="footer-block">
 		<div class="container footer flex">
 			<div class="footer-contacts">
@@ -158,6 +172,7 @@
 	</div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/swiper.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
