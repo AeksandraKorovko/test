@@ -12,6 +12,14 @@ $('.mobile-menu').click(function () {
     $('.navigation ul').toggleClass('active');
 });
 
+$('.sidebar-menu').click(function () {
+    $('.sidebar').toggleClass('active');
+});
+
+$('.xzoom, .xzoom-gallery').click(function () {
+    $('.xzoom, .xzoom-gallery').xzoom({tint: '#333', Xoffset: 5});
+});
+
 //Main slider initialization
 
     var mySwiper = new Swiper('.main-slider', {
@@ -25,6 +33,7 @@ $('.mobile-menu').click(function () {
         },
         loop: true,
     });
+   
 
 });
 
